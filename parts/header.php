@@ -2,7 +2,7 @@
       <nav class="menuHeader">
         <div class="logo">
           <a href="#">
-            <img src="img/logo.png" alt="">
+            <img src="img/logo.png" alt="Logo">
           </a>
         </div>
         <div class="enlaces">
