@@ -9,23 +9,39 @@ nav.menuHeader {
   width: 90%;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
 }
 
 nav.menuHeader div.logo {
-  width: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+  align-items: center;
+}
+
+nav.menuHeader div.logo .logoImg {
+  width: 10%;
+  max-width: 22px;
 }
 
 nav.menuHeader div.logo img {
   width: 100%;
 }
 
+nav.menuHeader div.logo i{
+  color: #E47F6B;
+}
+
 nav.menuHeader div.enlaces {
-  text-align: right;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 nav.menuHeader div.enlaces a {
@@ -66,6 +82,20 @@ nav.menuHeader div.enlaces a i {
   transform: translateY(-100%);
 }
 
-main {
-  font-size: 4em;
+/* Media Queries */
+@media only screen and (min-width: 769px) {
+  nav.menuHeader {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav.menuHeader .logo {
+    width: 10%!important;
+  }
+  nav.menuHeader .logo img {
+    min-width: 25px;
+  }
+
+  nav.menuHeader .logo #btn-menu {
+    display: none;
+  }
 }

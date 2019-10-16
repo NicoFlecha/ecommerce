@@ -14,7 +14,7 @@
       if ($cantProductos == null) {
         $cantProductos = 0;
       }
-      $imgProducto = '../img/productos/' . $imgNombre . ($cantProductos+1) . '.'. $ext;
+      $imgProducto = 'img/productos/' . $imgNombre . ($cantProductos+1) . '.'. $ext;
       move_uploaded_file($imgArchivo, $imgProducto);
     }
     $producto = [
@@ -26,6 +26,7 @@
     $productos[] = $producto;
     $productosFinal=json_encode($productos);
     file_put_contents('../database/productos.json', $productosFinal);
+    // Modificar función para que mueva desde funciones.php pero que abra la imagen desde home.php
 }
 ?>
 <!DOCTYPE html>

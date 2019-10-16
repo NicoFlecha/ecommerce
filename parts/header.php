@@ -1,11 +1,16 @@
     <header id="header">
       <nav class="menuHeader">
         <div class="logo">
-          <a href="#">
-            <img src="img/logo.png" alt="Logo">
+          <div class="logoImg">
+            <a href="#">
+              <img src="img/logo.png" alt="Logo">
+            </a>
+          </div>
+          <a id="btn-menu" class="iconoContenedor" href="#">
+            <i class="icono fas fa-bars"></i>
           </a>
         </div>
-        <div class="enlaces">
+        <div class="enlaces" id="enlaces">
           <a href="#"><i class="fas fa-fire"></i> Productos</a>
           <a href="#"><i class="far fa-question-circle"></i> F.A.Q</a>
           <a href="#"><i class="fas fa-user"></i> Ingresar</a>
