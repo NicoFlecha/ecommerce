@@ -28,13 +28,11 @@
       <label for="rePassword">Confirmar Password:</label>
       <input type="password" name="rePassword" id="rePassword">
       <div class="paraEnviar">
-        <input class="enviar" type="submit">
+        <input class="enviar" type="submit" value='Registrarme'>
       </div>
     </form>
 
 
-    <?php
-    require_once('parts/footer.php')
-     ?>
+    <?php require_once('parts/footer.php') ?>
   </body>
 </html>

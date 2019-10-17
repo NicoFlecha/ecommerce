@@ -7,33 +7,33 @@ h1 {
   color: #252624;
 }
 
-form.registro {
+form.login {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
 }
 
-form.registro label {
+form.login label {
   margin-top: 10px;
   font-size: 1.05em;
   color: #252624;
 }
 
-form.registro input {
+form.login input {
   width: 100%;
   padding: 8px;
   border-radius: 5px;
   border: 1px solid lightgray;
 }
 
-form.registro div.paraEnviar {
+form.login div.paraIngresar {
   display: flex;
   justify-content: flex-end;
 }
 
-form.registro div.paraEnviar input.enviar {
-  width: 120px;
+form.login div.paraIngresar input.ingresar {
+  width: 90px;
   height: 40px;
   border: none;
   background-color: #E47F6B;
@@ -43,18 +43,6 @@ form.registro div.paraEnviar input.enviar {
   font-size: 1.05em;
 }
 
-form.registro div.paraEnviar input.enviar:hover {
+form.login div.paraIngresar input.ingresar:hover {
   background-color: #D53717;
-}
-
-/* Media Queries */
-@media only screen and (min-width: 700px) {
-  form.registro {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  form.registro input {
-    width: 45%;
-  }
 }
