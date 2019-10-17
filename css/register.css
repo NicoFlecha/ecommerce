@@ -1,0 +1,46 @@
+div.relleno {
+  height: 10vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+form.registro {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+
+form.registro label {
+  margin-top: 10px;
+  font-size: 1.05em;
+}
+
+form.registro input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+form.registro div.paraEnviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form.registro div.paraEnviar input.enviar {
+  width: 80px;
+  height: 40px;
+  border: none;
+  background-color: #E47F6B;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.05em;
+}
+
+form.registro div.paraEnviar input.enviar:hover {
+  background-color: #D53717;
+}

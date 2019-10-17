@@ -10,6 +10,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   </head>
   <body>
     <?php
@@ -21,23 +22,35 @@
        </div>
        <div class="productos">
          <?php foreach ($productos as $producto) {?>
-         <div class="producto">
-           <div class="imgProducto">
-             <img src=<?= $producto['imgProducto']?>>
+         <a class="linkProducto" href="#">
+           <div class="producto">
+             <div class="imgProducto">
+               <img src=<?= $producto['imgProducto']?>>
+             </div>
+             <div class="textoProducto">
+               <div class="precio">
+                 <span>$ <?= $producto['precio']?></span>
+               </div>
+               <div class="descripcion">
+                 <small><?= $producto['descripcion']?></small>
+               </div>
+             </div>
            </div>
-         </div>
+         </a>
        <?php } ?>
        </div>
      </main>
+     <?php
+     require_once('parts/footer.php');
+      ?>
 
 
 
 
+<?php
 
+require_once('parts/scripts.php');
 
-     <script src="js/headroom.min.js"></script>
-     <script src="js/jquery-3.4.1.min.js"></script>
-     <script src="js/header.js"></script>
-     <script src="https://kit.fontawesome.com/3981d882ec.js" crossorigin="anonymous"></script>
+ ?>
   </body>
 </html>

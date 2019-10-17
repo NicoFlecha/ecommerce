@@ -15,7 +15,7 @@
         $cantProductos = 0;
       }
       $imgProducto = 'img/productos/' . $imgNombre . ($cantProductos+1) . '.'. $ext;
-      move_uploaded_file($imgArchivo, $imgProducto);
+      move_uploaded_file($imgArchivo, '../'.$imgProducto);
     }
     $producto = [
       'nombre' => $nombre,
