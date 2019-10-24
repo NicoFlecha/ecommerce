@@ -16,21 +16,33 @@
     </div>
 
     <h1>¡Registrate!</h1>
-    <form class="registro" action="register.php" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Roberto" value="">
-      <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" id="apellido" placeholder="Sarasa" value="">
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" placeholder="sarasa@sarasa.com" value="">
-      <label for="password">Contraseña:</label>
-      <input type="password" name="password" id="password">
-      <label for="rePassword">Confirmar Password:</label>
-      <input type="password" name="rePassword" id="rePassword">
-      <div class="paraEnviar">
-        <input class="enviar" type="submit" value='Registrarme'>
-      </div>
-    </form>
+    <div class="contenedorFormulario">
+      <form class="registro" action="register.php" method="post">
+        <div class="inputForm">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Roberto" value="">
+        </div>
+        <div class="inputForm">
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Sarasa" value="">
+        </div>
+        <div class="inputForm email">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="sarasa@sarasa.com" value="">
+        </div>
+        <div class="inputForm">
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <div class="inputForm">
+          <label for="rePassword">Confirmar Contraseña:</label>
+          <input type="password" name="rePassword" id="rePassword">
+        </div>
+        <div class="paraEnviar">
+          <input class="enviar" type="submit" value='Registrarme'>
+        </div>
+      </form>
+    </div>
 
 
     <?php require_once('parts/footer.php') ?>

@@ -4,14 +4,30 @@ div.relleno {
 
 h1 {
   text-align: center;
-  color: #252624;
+  color: #E47F6B;
+}
+
+div.contenedorFormulario {
+  background-color: white;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 form.registro {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  width: 90%;
+  justify-content: space-between;
+  width: 100%;
   margin: 0 auto;
+}
+
+form div.inputForm {
+  margin-top: 10px;
 }
 
 form.registro label {
@@ -28,8 +44,8 @@ form.registro input {
 }
 
 form.registro div.paraEnviar {
-  display: flex;
-  justify-content: flex-end;
+  width: 100%;
+  text-align: right;
 }
 
 form.registro div.paraEnviar input.enviar {
@@ -54,7 +70,19 @@ form.registro div.paraEnviar input.enviar:hover {
     flex-wrap: wrap;
   }
 
-  form.registro input {
-    width: 45%;
+  form div.inputForm {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form div.inputForm.email {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  div.contenedorFormulario {
+    width: 50%;
   }
 }

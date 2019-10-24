@@ -4,7 +4,7 @@ div.relleno {
 
 h1 {
   text-align: center;
-  color: #252624;
+  color: #E47F6B;
 }
 
 form.login {
@@ -12,6 +12,12 @@ form.login {
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
+}
+
+div.contenedorFormulario {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 form.login label {
@@ -46,3 +52,8 @@ form.login div.paraIngresar input.ingresar {
 form.login div.paraIngresar input.ingresar:hover {
   background-color: #D53717;
 }
+
+@media only screen and (min-width: 1000px) {
+  div.contenedorFormulario {
+    width: 50%;
+  }

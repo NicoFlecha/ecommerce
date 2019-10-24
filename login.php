@@ -13,15 +13,17 @@
     <div class="relleno">
     </div>
     <h1>Iniciar Sesión</h1>
-    <form class="login" action="login.php" method="post">
-      <label for="user">Email ó Usuario:</label>
-      <input type="text" name="user" id="user" placeholder="sarasa" value="">
-      <label for="password">Contraseña:</label>
-      <input type="password" name="password" id="password">
-      <div class="paraIngresar">
-        <input class="ingresar" type="submit" value="Ingresar">
-      </div>
-    </form>
+    <div class="contenedorFormulario">
+      <form class="login" action="login.php" method="post">
+        <label for="user">Email ó Usuario:</label>
+        <input type="text" name="user" id="user" placeholder="sarasa" value="">
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password">
+        <div class="paraIngresar">
+          <input class="ingresar" type="submit" value="Ingresar">
+        </div>
+      </form>
+    </div>
     <?php require_once('parts/footer.php') ?>
   </body>
 </html>

@@ -78,14 +78,18 @@ div.productos div.producto div.descripcion small {
 
 @media only screen and (min-width: 650px) {
   a.linkProducto {
-    display: inline-block;
     width: 31%;
   }
 }
 
 @media only screen and (min-width: 900px) {
   a.linkProducto {
-    display: inline-block;
     width: 24%;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  a.linkProducto {
+    width: 20%;
   }
 }
