@@ -13,8 +13,4 @@
   <div class="legales">
     <i class="fas fa-fire"></i> Fueguito™
   </div>
-
 </footer>
-<?php
-require_once('scripts.php');
- ?>
